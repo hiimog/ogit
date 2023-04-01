@@ -1,6 +1,6 @@
 import dataclasses
 from typing import *
-
+from uuid import UUID
 
 @dataclasses.dataclass
 class LogConfig:
@@ -13,3 +13,4 @@ class LogConfig:
 @dataclasses.dataclass
 class Config:
     logging: LogConfig
+    correlation_id: UUID
