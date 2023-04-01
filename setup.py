@@ -9,6 +9,7 @@ setup(
         'Click',
         'dulwich',
         'orjson',
+        'requests',
     ],
     entry_points={
         'console_scripts': [
