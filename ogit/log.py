@@ -68,7 +68,7 @@ class Logger:
         lazy_kwargs["cor"] = self._correlation_id
         body = {
             "@t": datetime.utcnow().isoformat() + "Z",
-            "@m": msg,
+            "@m": lazy_msg,
             "@l": level,
             **lazy_kwargs
         }

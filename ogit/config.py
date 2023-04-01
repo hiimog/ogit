@@ -5,8 +5,7 @@ from uuid import UUID
 @dataclasses.dataclass
 class LogConfig:
     level: Literal["debug", "info", "warn", "error"]
-    sinks: Literal["seq", "file"]
-    filters: List[str]
+    sinks: List[str]
     file: Optional[str]
 
 
